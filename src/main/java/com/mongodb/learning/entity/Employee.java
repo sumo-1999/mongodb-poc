@@ -14,7 +14,7 @@ import java.time.LocalDate;
 @SuperBuilder
 @Data
 @Document
-public class Employee {
+public class Employee extends CreateUpdate{
 
     @Id
     private String id;
@@ -27,7 +27,7 @@ public class Employee {
 
     private LocalDate joiningDate;
 
-//    private  String department;
+    private  String department;
 
     private String employeeCode;
 

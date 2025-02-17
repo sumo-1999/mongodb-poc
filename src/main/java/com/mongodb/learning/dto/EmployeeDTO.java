@@ -27,8 +27,8 @@ public class EmployeeDTO {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd") // Accepts date as "yyyy-MM-dd"
     private LocalDate joiningDate;
 
-//    @NotNull(message = "{department.notnull}")
-//    private Department department;
+    @NotNull(message = "{department.notnull}")
+    private String department;
 
     @Pattern(regexp = "\\+91-\\d{5}-\\d{5}", message = "{phone.invalid}") // Enforce phone format "+91-XXXXX-XXXXX"
     private String phoneNumber;
